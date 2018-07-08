@@ -1,9 +1,5 @@
 var panel = $('#quiz-area');
 
-
-
-
-
 $(document).on('click', '#start', function(e) {
     game.start();
 });
@@ -11,7 +7,6 @@ $(document).on('click', '#start', function(e) {
 $(document).on('click', '#done', function(e) {
     game.done();
 });
-
 
 var questions = [{
     question: "1 . In what month is the earth closest to the sun?",
@@ -56,7 +51,7 @@ var game = {
         $('#counter-number').html(game.counter);
 
         if (game.counter === 0) {
-            console.log('TIME UP');
+            console.log('TIME IS UP!!!');
             game.done();
         }
     },
